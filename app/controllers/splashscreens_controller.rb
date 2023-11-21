@@ -1,0 +1,2 @@
+class SplashscreensController < ApplicationController
+end
