@@ -4,7 +4,7 @@ class Category < ApplicationRecord
   attribute :icon, :string
 
   # Associations
-  belongs_to :author, class_name: 'User'
+  belongs_to :author, class_name: 'User', foreign_key: 'author_id'
   has_and_belongs_to_many :expenses, join_table: :expenses_categories
 
   # Validations
