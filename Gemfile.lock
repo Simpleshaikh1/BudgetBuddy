@@ -303,7 +303,7 @@ DEPENDENCIES
   bootsnap
   capybara
   debug
-  devise
+  devise (~> 4.9.3)
   importmap-rails
   jbuilder
   pg (~> 1.1)
