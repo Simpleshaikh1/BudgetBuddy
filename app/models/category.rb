@@ -1,17 +1,17 @@
-class Category < ApplicationRecord
-  # Attributes
-  attribute :name, :string
-  attribute :icon, :string
+# class Category < ApplicationRecord
+#   # Attributes
+#   attribute :name, :string
+#   attribute :icon, :string
 
-  # Associations
-  belongs_to :author, class_name: 'User', foreign_key: 'author_id'
-  has_and_belongs_to_many :expenses, join_table: :expenses_categories
+#   # Associations
+#   belongs_to :author, class_name: 'User', foreign_key: 'author_id'
+#   has_and_belongs_to_many :expenses, join_table: :expenses_categories
 
-  # Validations
-  validates :name, presence: true
+#   # Validations
+#   validates :name, presence: true
 
-  # Methods
-  def total_expenditure
-    expenses.sum(:amount)
-  end
-end
+#   # Methods
+#   def total_expenditure
+#     expenses.sum(:amount)
+#   end
+# end
