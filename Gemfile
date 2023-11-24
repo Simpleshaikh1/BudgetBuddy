@@ -9,6 +9,7 @@ gem 'rails', '~> 7.1.2'
 # Install Rubocop
 gem 'rubocop', '>= 1.0', '< 2.0'
 
+gem 'sassc-rails', '~> 2.1', '>= 2.1.2'
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem 'sprockets-rails'
 

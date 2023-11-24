@@ -1,3 +1,3 @@
-class SplashscreensController < ApplicationController
+class SplashController < ApplicationController
   def index; end
 end
