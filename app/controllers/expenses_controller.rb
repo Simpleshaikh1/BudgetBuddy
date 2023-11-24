@@ -18,7 +18,7 @@ class ExpensesController < ApplicationController
 
     if @expense.save
       @group.expenses << @expense
-      redirect_to group_expenses_path(@group), notice: 'Transaction was successfully created.'
+      redirect_to group_expenses_path(@group), notice: 'Transaction was successfully created!'
     else
       flash[:alert] = 'Transaction could not be created.'
       render :new
