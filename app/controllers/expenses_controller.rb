@@ -7,17 +7,21 @@ class ExpensesController < ApplicationController
   end
 
   def new
+    @groups = current_user.groups
     @group = Group.find(params[:group_id])
     @expense = @group.expenses.new
   end
 
   def create
     @group = Group.find(params[:group_id])
-    @expense = @group.expenses.new(expense_params)
+    @expense = @group.expenses.new(expense_params.merge(author: current_user))
     @expense.author = current_user
 
+    selected_group_ids = params.dig(:expense, :group_ids) || []
+    @expense.groups = Group.where(id: selected_group_ids)
+
     if @expense.save
-      @group.expenses << @expense
+    #   @group.expenses << @expense
       redirect_to group_expenses_path(@group), notice: 'Transaction was successfully created.'
     else
       flash[:alert] = 'Transaction could not be created.'
@@ -28,6 +32,6 @@ class ExpensesController < ApplicationController
   private
 
   def expense_params
-    params.require(:expense).permit(:name, :amount)
+    params.require(:expense).permit(:name, :amount, group_ids: [])
   end
 end
