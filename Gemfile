@@ -15,6 +15,8 @@ gem 'sprockets-rails'
 
 gem 'devise', '~> 4.9.3'
 
+gem 'factory_bot_rails', '~> 6.2'
+
 # Use postgresql as the database for Active Record
 gem 'pg', '~> 1.1'
 
