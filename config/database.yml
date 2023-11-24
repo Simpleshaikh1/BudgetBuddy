@@ -26,6 +26,4 @@ test:
 
 production:
   <<: *default
-  database: budgetbuddy_development
-  username: postgres
   url: <%= ENV['DATABASE_URL'] %>
