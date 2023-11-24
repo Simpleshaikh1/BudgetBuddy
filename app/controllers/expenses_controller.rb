@@ -1,20 +1,26 @@
 class ExpensesController < ApplicationController
   before_action :authenticate_user!
 
+  def index
+    @group = Group.find(params[:group_id])
+    @expenses = @group.expenses.order(created_at: :desc)
+  end
+
   def new
-    @category = Category.find(params[:category_id])
-    @expense = @category.expenses.build
+    @group = Group.find(params[:group_id])
+    @expense = @group.expenses.new
   end
 
   def create
-    @category = Category.find(params[:category_id])
-    @expense = @category.expenses.build(expense_params)
+    @group = Group.find(params[:group_id])
+    @expense = @group.expenses.new(expense_params)
     @expense.author = current_user
 
     if @expense.save
-      redirect_to category_path(@category), notice: 'Expenditure added successfully'
+      @group.expenses << @expense
+      redirect_to group_expenses_path(@group), notice: 'Transaction was successfully created.'
     else
-      puts @expense.errors.full_messages # Add this line for debugging
+      flash[:alert] = 'Transaction could not be created.'
       render :new
     end
   end
@@ -22,6 +28,6 @@ class ExpensesController < ApplicationController
   private
 
   def expense_params
-    params.require(:expense).permit(:name, :amount, category_ids: [])
+    params.require(:expense).permit(:name, :amount)
   end
 end

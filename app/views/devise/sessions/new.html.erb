@@ -1,32 +1,30 @@
-<div class="container mt-5">
-  <div class="row justify-content-center">
-    <div class="col-md-6">
-      <h2>Log in</h2>
-
-      <%= form_for(resource, as: resource_name, url: session_path(resource_name), html: { class: "needs-validation", novalidate: true }) do |f| %>
-        <div class="mb-3">
-          <%= f.label :email, class: "form-label" %>
-          <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "form-control", required: true %>
-        </div>
-
-        <div class="mb-3">
-          <%= f.label :password, class: "form-label" %>
-          <%= f.password_field :password, autocomplete: "current-password", class: "form-control", required: true %>
-        </div>
-
-        <% if devise_mapping.rememberable? %>
-          <div class="mb-3">
-            <%= f.check_box :remember_me, class: "form-check-input" %>
-            <%= f.label :remember_me, class: "form-check-label" %>
-          </div>
-        <% end %>
-
-        <div class="text-center">
-          <%= f.submit "Log in", class: "btn btn-primary" %>
-        </div>
-      <% end %>
-
-      <%= render "devise/shared/links" %>
+<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+  <div class="header">
+    <%= link_to root_path do %>
+      <%= image_tag 'back_arrow.svg' %>
+    <% end %>
+    <p>Login</p>
+    <div class="actions">
+      <%= f.submit "Login", class: "header-btn" %>
     </div>
   </div>
-</div>
+
+  <div class="form">
+    <div class="field">
+      <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: 'Email' %>
+    </div>
+
+    <div class="field">
+      <%= f.password_field :password, autocomplete: "current-password", placeholder: 'Password' %>
+    </div>
+
+    <% if devise_mapping.rememberable? %>
+      <div class="field">
+        <%= f.check_box :remember_me, class: 'check_box' %>
+        <%= f.label :remember_me %>
+      </div>
+    <% end %>
+  </div>
+<% end %>
+
+<%= render "devise/shared/links" %>
