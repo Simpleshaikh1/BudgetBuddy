@@ -17,5 +17,13 @@
     <div class="field">
       <%= f.number_field :amount, placeholder: 'Amount' %>
     </div>
+
+    <div class="field">
+      <p>Categories:</p>
+      <% @groups.each do |group| %>
+        <%= check_box_tag 'expense[group_ids][]', group.id %>
+        <%= label_tag "expense_group_ids_#{group.id}", group.name %><br>
+      <% end %>
+    </div>
   </div>
 <% end %>
