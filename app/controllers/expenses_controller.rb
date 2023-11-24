@@ -21,7 +21,6 @@ class ExpensesController < ApplicationController
     @expense.groups = Group.where(id: selected_group_ids)
 
     if @expense.save
-    #   @group.expenses << @expense
       redirect_to group_expenses_path(@group), notice: 'Transaction was successfully created.'
     else
       flash[:alert] = 'Transaction could not be created.'
