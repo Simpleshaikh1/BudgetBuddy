@@ -70,13 +70,13 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://smartbudget-mhwp.onrender.com)
+- [Live Demo Link](https://budgetbuddy-app.onrender.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🚶‍♀️🚶‍♀️ Walk Through <a name="live-demo"></a>
 
-- [Walk through video](https://drive.google.com/file/d/1Wpj86eBYtllNz-u2mizgruiK3Z4xZ_ZF/view?usp=sharing)
+- [Walk through video](https://www.loom.com/share/7d84f51bc24a468aacf9d329e303f112?sid=04148422-0e68-42a4-a410-328f525e1d23)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -101,7 +101,7 @@ Clone this repository to your desired folder:
 
 ```sh
   cd my-folder
-  git clone https://github.com/sahlminkok/smart-budget.git
+  git clone https://github.com/Simpleshaikh1/BudgetBuddy.git
 ```
 
 ### Install
@@ -109,7 +109,7 @@ Clone this repository to your desired folder:
 Install this project with:
 
 ```sh
-  cd smart-budget
+  cd BudgetBuddy
   gem install
 ```
 
@@ -137,11 +137,11 @@ To run tests, run the following command:
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 **Sahalu Aminu**
+👤 **Toyyib Bello**
 
-- GitHub: [@sahlminkok](https://github.com/sahlminkok)
-- Twitter: [@sahlminkok](https://twitter.com/sahlminkok)
-- LinkedIn: [sahlminkok](https://linkedin.com/in/sahlminkok)
+- GitHub: [@sahlminkok](https://github.com/Simpleshaikh1)
+- Twitter: [@sahlminkok](https://twitter.com/simpleshaikh1)
+- LinkedIn: [sahlminkok](https://linkedin.com/in/toyyib-abayomi)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -161,7 +161,7 @@ To run tests, run the following command:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/sahlminkok/smart-budget/issues).
+Feel free to check the [issues page](https://github.com/Simpleshaikh1/BudgetBuddy/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
