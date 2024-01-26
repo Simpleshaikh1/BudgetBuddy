@@ -137,11 +137,11 @@ To run tests, run the following command:
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 **Sahalu Aminu**
+👤 **Toyyib Bello**
 
-- GitHub: [@sahlminkok](https://github.com/sahlminkok)
-- Twitter: [@sahlminkok](https://twitter.com/sahlminkok)
-- LinkedIn: [sahlminkok](https://linkedin.com/in/sahlminkok)
+- GitHub: [@sahlminkok](https://github.com/simpleshaikh1)
+- Twitter: [@sahlminkok](https://twitter.com/simpleshaikh1)
+- LinkedIn: [sahlminkok](https://linkedin.com/in/abayomi)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -161,7 +161,6 @@ To run tests, run the following command:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/sahlminkok/smart-budget/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
